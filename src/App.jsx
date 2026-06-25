@@ -3,7 +3,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom"
-
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home"
 import Products from "./pages/Product"
 import ProductDetail from "./pages/ProductDetail"
@@ -25,6 +25,7 @@ function App() {
 
       <div className="bg-black min-h-screen text-white">
 
+  <ScrollToTop />
         <Navbar />
 
         <Routes>

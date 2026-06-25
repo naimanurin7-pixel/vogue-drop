@@ -26,6 +26,13 @@ function Navbar() {
   const user = JSON.parse(
   localStorage.getItem("user")
 );
+const isAuthenticated = !!user;
+
+const handleLogout = () => {
+  localStorage.removeItem("user");
+  setMobileMenu(false);
+  navigate("/login");
+};
 const [showProfile, setShowProfile] =
   useState(false);
   const {theme,toggleTheme,} = useTheme()
@@ -113,54 +120,102 @@ const [showProfile, setShowProfile] =
         "
       >
 
-        <Link
-          to="/"
-          onClick={() =>
-            setMobileMenu(false)
-          }
-        >
-          Home
-        </Link>
+       <Link
+  to="/"
+  onClick={() => setMobileMenu(false)}
+  className="
+    px-3
+    py-2
+    rounded-lg
+    hover:bg-yellow-400
+    hover:text-black
+    transition-all
+    duration-300
+  "
+>
+  Home
+</Link>
 
         <Link
-          to="/products"
-          onClick={() =>
-            setMobileMenu(false)
-          }
+          onClick={() => setMobileMenu(false)}
+  className="
+    px-3
+    py-2
+    rounded-lg
+    hover:bg-yellow-400
+    hover:text-black
+    transition-all
+    duration-300
+  "
         >
           Products
         </Link>
 
         <Link
-          to="/wishlist"
-          onClick={() =>
-            setMobileMenu(false)
-          }
-        >
+          onClick={() => setMobileMenu(false)}
+  className="
+    px-3
+    py-2
+    rounded-lg
+    hover:bg-yellow-400
+    hover:text-black
+    transition-all
+    duration-300
+  ">
           Wishlist
         </Link>
 
-        <Link
-          to="/login"
-          onClick={() =>
-            setMobileMenu(false)
-          }
-        >
-          Login
-        </Link>
-<Link
-  to="/register"
+  {!isAuthenticated ? (
+  <>
+    <Link
+      to="/login"
+ onClick={() => setMobileMenu(false)}
   className="
-    bg-yellow-400
-    text-black
-    px-4
+    px-3
     py-2
-    rounded-xl
-    font-bold
+    rounded-lg
+    hover:bg-yellow-400
+    hover:text-black
+    transition-all
+    duration-300
+  "    >
+      Login
+    </Link>
+
+    <Link
+      to="/register"
+      onClick={() => setMobileMenu(false)}
+  className="
+    px-3
+    py-2
+    rounded-lg
+    hover:bg-yellow-400
+    hover:text-black
+    transition-all
+    duration-300
   "
->
-  Register
-</Link>
+    >
+      Register
+    </Link>
+  </>
+) : (
+  <>
+    <button
+      onClick={() => setMobileMenu(false)}
+  className="
+    px-3
+    py-2
+    rounded-lg
+    hover:bg-yellow-400
+    hover:text-black
+    transition-all
+    duration-300
+  "
+    >
+      Logout
+    </button>
+  </>
+)}
       </div>
 
     </div>
@@ -483,25 +538,24 @@ const [showProfile, setShowProfile] =
   </p>
 
 </div>
-      <button
-       onClick={() => {
-  localStorage.removeItem("user");
-  setShowProfile(false);
-  navigate("/login");
-}}
-       className="
-    w-full
-    text-left
-    px-4
-    py-3
-    text-red-500
-    font-medium
-    hover:bg-gray-100
+   <button
+  onClick={() => {
+    handleLogout();
+    setShowProfile(false);
+  }}
+  className="
+   w-full
+    bg-yellow-400
+    text-black
+    py-2
+    rounded-lg
+    font-semibold
+    hover:bg-yellow-300
+    transition
   "
-
-      >
-        Logout
-      </button>
+>
+  Logout
+</button>
 
     </div>
 

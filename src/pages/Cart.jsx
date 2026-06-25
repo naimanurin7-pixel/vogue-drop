@@ -11,7 +11,7 @@ import {
 import {
   useNavigate,
 } from "react-router-dom"
-
+import { Link } from "react-router-dom";
 import toast from "react-hot-toast"
 
 function CartPage() {
@@ -142,14 +142,38 @@ function CartPage() {
             "
           >
 
-            <h2
-              className="
-                text-xl
-                text-zinc-400
-              "
-            >
-              Your cart is empty
-            </h2>
+            <div className="flex flex-col items-center justify-center py-20">
+
+  <div className="text-7xl mb-6">
+    🛒
+  </div>
+
+  <h2 className="text-3xl font-bold text-white">
+    Your Cart is Empty
+  </h2>
+
+  <p className="text-zinc-400 mt-3 text-center">
+    Looks like you haven't added anything yet.
+  </p>
+
+  <Link
+    to="/products"
+    className="
+      mt-8
+      bg-yellow-400
+      text-black
+      px-8
+      py-3
+      rounded-xl
+      font-bold
+      hover:bg-yellow-300
+      transition
+    "
+  >
+    Continue Shopping
+  </Link>
+
+</div>
 
           </div>
 

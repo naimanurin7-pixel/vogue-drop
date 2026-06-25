@@ -1,12 +1,17 @@
 import { useState } from "react"
 
-import { Link, useNavigate } from "react-router-dom"
+import { Link, useNavigate , useLocation} from "react-router-dom"
 
 import toast from "react-hot-toast"
 
 function Login() {
 
   const navigate = useNavigate()
+
+  const location = useLocation();
+
+const from =
+  location.state?.from?.pathname || "/";
 
   const [email, setEmail] =
     useState("")
@@ -50,7 +55,7 @@ const handleLogin = (e) => {
 
   toast.success("Login Successful");
 
-  navigate("/checkout");
+navigate(from, { replace: true });
 };
 
   return (

@@ -1,12 +1,8 @@
-import {
-  useDispatch,
-  useSelector,
-} from "react-redux"
-
-import {
-  removeFromWishlist,
-} from "../redux/slices/wishlistSlice"
-
+import {useDispatch, useSelector,} from "react-redux"
+import toast from "react-hot-toast";
+import {removeFromWishlist,} from "../redux/slices/wishlistSlice"
+import { addToCart } from "../redux/slices/cartSlice";
+import { Link } from "react-router-dom";
 function WishlistPage() {
 
   const dispatch = useDispatch()
@@ -41,9 +37,38 @@ function WishlistPage() {
 
         {wishlistItems.length === 0 ? (
 
-          <p className="text-zinc-400">
-            Your wishlist is empty
-          </p>
+         <div className="flex flex-col items-center justify-center py-20">
+
+  <div className="text-7xl mb-6">
+    ❤️
+  </div>
+
+  <h2 className="text-3xl font-bold text-white">
+    Your Wishlist is Empty
+  </h2>
+
+  <p className="text-zinc-400 mt-3 text-center">
+    Save your favourite products here.
+  </p>
+
+  <Link
+    to="/products"
+    className="
+      mt-8
+      bg-yellow-400
+      text-black
+      px-8
+      py-3
+      rounded-xl
+      font-bold
+      hover:bg-yellow-300
+      transition
+    "
+  >
+    Explore Products
+  </Link>
+
+</div>
 
         ) : (
 
@@ -104,17 +129,47 @@ function WishlistPage() {
 
                 </div>
 
-                <button
-                  onClick={() =>
-                    dispatch(removeFromWishlist(item.id))
-                  }
-                  className="
-                    text-red-500
-                    hover:text-red-400
-                  "
-                >
-                  Remove
-                </button>
+                <div className="flex flex-col gap-2">
+
+  <button
+    onClick={() => {
+      dispatch(addToCart(item));
+      toast.success("Added to Cart");
+      // Optional
+      // dispatch(removeFromWishlist(item.id));
+    }}
+    className="
+      bg-yellow-400
+      text-black
+      px-4
+      py-2
+      rounded-lg
+      font-semibold
+      hover:bg-yellow-300
+      transition
+    "
+  >
+    Add to Cart
+  </button>
+
+  <button
+    onClick={() =>
+      dispatch(removeFromWishlist(item.id))
+    }
+    className="
+      bg-red-500
+      text-white
+      px-4
+      py-2
+      rounded-lg
+      hover:bg-red-600
+      transition
+    "
+  >
+    Remove
+  </button>
+
+</div>
 
               </div>
 
