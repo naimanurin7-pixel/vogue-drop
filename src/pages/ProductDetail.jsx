@@ -212,45 +212,58 @@ leading-7
 
             <div className="flex gap-4 mb-8">
 
-  <div
-    className="
-      flex
-      items-center
-      border
-      border-zinc-700
-      rounded-xl
-    "
-  >
-    <button
-      onClick={() =>
-        setQuantity(
-          Math.max(1, quantity - 1)
-        )
-      }
-      className="
-flex
-items-center
-border
-border-zinc-700
-rounded-xl
-h-12
-"
-    >
-      <Minus />
-    </button>
+ <div
+  className="
+    flex
+    items-center
+    justify-between
+    w-36
+    h-12
+    border
+    border-zinc-700
+    rounded-xl
+    px-2
+  "
+>
+   <button
+  onClick={() =>
+    setQuantity(Math.max(1, quantity - 1))
+  }
+  className="
+    w-10
+    h-10
+    flex
+    items-center
+    justify-center
+    rounded-lg
+    hover:bg-zinc-800
+    transition
+  "
+>
+  <Minus className="w-5 h-5" />
+</button>
 
     <span className="px-4">
       {quantity}
     </span>
 
-    <button
-      onClick={() =>
-        setQuantity(quantity + 1)
-      }
-      className="px-4 py-3"
-    >
-      <Plus />
-    </button>
+ <button
+  onClick={() =>
+    setQuantity(quantity + 1)
+  }
+  className="
+    w-10
+    h-10
+    flex
+    items-center
+    justify-center
+    rounded-lg
+    hover:bg-zinc-800
+    transition
+  "
+>
+  <Plus className="w-5 h-5" />
+</button>
   </div>
 
   <button
