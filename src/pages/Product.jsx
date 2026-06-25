@@ -190,7 +190,8 @@ useEffect(() => {
 
         <h3
           className="
-            text-xl
+           text-lg
+md:text-xl
             font-bold
             text-yellow-400
           "
@@ -446,7 +447,8 @@ useEffect(() => {
       sm:grid-cols-2
       md:grid-cols-3
       lg:grid-cols-4
-      gap-8
+      gap-4
+md:gap-8
     "
   >
 
@@ -461,7 +463,7 @@ return (
     <div
       className="
         bg-zinc-900
-        rounded-3xl
+        rounded-2xl
         overflow-hidden
         group
         hover:-translate-y-2
@@ -480,7 +482,9 @@ return (
       className="
         relative
         bg-white
-        h-[220px]
+        h-[160px]
+sm:h-[180px]
+md:h-[220px]
         p-5
         flex
         items-center
@@ -567,7 +571,7 @@ return (
 </Link>
     {/* CONTENT */}
 
-    <div className="p-4">
+    <div className="p-3 md:p-4">
 
       <h2
         className="
@@ -592,7 +596,8 @@ return (
   <p
     className="
       text-yellow-400
-      text-2xl
+      text-lg
+md:text-2xl
       font-bold
     "
   >
@@ -642,8 +647,10 @@ return (
         toast.success("Added To Cart");
       }}
      className="
-  w-10
-  h-10
+ w-8
+h-8
+md:w-10
+md:h-10
   rounded-full
   border
   border-zinc-600

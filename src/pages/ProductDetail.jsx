@@ -125,7 +125,9 @@ if (loading) {
   src={product.image}
   alt={product.title}
   className="
-    h-[350px]
+    h-[220px]
+sm:h-[280px]
+md:h-[350px]
     w-full
     object-contain
     hover:scale-105
@@ -152,7 +154,9 @@ if (loading) {
 
             <h1
               className="
-                text-4xl
+                text-2xl
+sm:text-3xl
+md:text-4xl
                 font-black
                 mb-4
               "
@@ -181,7 +185,9 @@ if (loading) {
 
             <h2
               className="
-                text-4xl
+                text-2xl
+sm:text-3xl
+md:text-4xl
                 font-bold
                 text-yellow-400
                 mb-6
@@ -192,8 +198,10 @@ if (loading) {
 
             <p
               className="
-                text-zinc-300
-                leading-relaxed
+               text-sm
+sm:text-base
+text-zinc-300
+leading-7
                 mb-8
               "
             >

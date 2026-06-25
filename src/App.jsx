@@ -53,12 +53,7 @@ function App() {
   path="/wishlist"
   element={<WishlistPage />}
 />
-          <Route
-            path="/login"
-            element={<Login />}
-          />
-
-          <Route
+ <Route
             path="/checkout"
             element={
               <ProtectedRoute>
@@ -66,6 +61,12 @@ function App() {
               </ProtectedRoute>
             }
           />
+          <Route
+            path="/login"
+            element={<Login />}
+          />
+
+         
 
           <Route
             path="*"

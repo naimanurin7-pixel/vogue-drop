@@ -29,7 +29,7 @@ function Home() {
      className="
   w-full
   h-full
-  object-contain
+  object-cover
   md:object-cover
 "
     />
@@ -56,8 +56,8 @@ function Home() {
       flex
       flex-col
       items-center
-      justify-end
-     pb-12 md:pb-24
+      justify-center
+     px-6
       text-center
       z-10
     "
@@ -93,11 +93,11 @@ md:text-7xl
         className="
           bg-yellow-400
           text-black
-          px-10
-          py-4
+          px-7
+          py-3
           rounded-full
           font-bold
-          text-lg
+          text-base
           hover:bg-yellow-300
           hover:scale-105
           transition-all
@@ -115,9 +115,9 @@ md:text-7xl
 </section>
 
 
-<section className="py-20 bg-black">
-  <div className="max-w-7xl mx-auto px-6">
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+<section className="py-18 bg-black">
+  <div className="max-w-4xl mx-auto px-6">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
 
       {/* CARD 1 */}
       <div
@@ -125,7 +125,7 @@ md:text-7xl
           bg-zinc-900
           border border-yellow-400/20
           rounded-3xl
-          p-8
+p-4 md:p-5
           hover:border-yellow-400
           hover:-translate-y-2
           transition-all
@@ -134,7 +134,7 @@ md:text-7xl
       >
         <div
           className="
-            w-16 h-16
+            w-12 h-12
             rounded-full
             bg-yellow-400
             flex
@@ -144,7 +144,7 @@ md:text-7xl
             mb-6
           "
         >
-          <Truck className="w-8 h-8" />
+          <Truck className="w-6 h-6" />
         </div>
 
         <h3 className="text-white text-xl font-bold mb-2">
@@ -162,7 +162,7 @@ md:text-7xl
           bg-zinc-900
           border border-yellow-400/20
           rounded-3xl
-          p-8
+p-4 md:p-5
           hover:border-yellow-400
           hover:-translate-y-2
           transition-all
@@ -171,7 +171,7 @@ md:text-7xl
       >
         <div
           className="
-            w-16 h-16
+            w-12 h-12
             rounded-full
             bg-yellow-400
             flex
@@ -181,7 +181,7 @@ md:text-7xl
             mb-6
           "
         >
-          <ShieldCheck className="w-8 h-8" />
+          <ShieldCheck className="w-6 h-6" />
         </div>
 
         <h3 className="text-white text-xl font-bold mb-2">
@@ -199,7 +199,7 @@ md:text-7xl
           bg-zinc-900
           border border-yellow-400/20
           rounded-3xl
-          p-8
+p-4 md:p-5
           hover:border-yellow-400
           hover:-translate-y-2
           transition-all
@@ -218,14 +218,14 @@ md:text-7xl
             mb-6
           "
         >
-          <RefreshCw className="w-8 h-8" />
+          <RefreshCw className="w-6 h-6" />
         </div>
 
         <h3 className="text-white text-xl font-bold mb-2">
           Easy Returns
         </h3>
 
-        <p className="text-zinc-400">
+        <p className="text-sm text-zinc-400">
           Hassle-free returns within 30 days.
         </p>
       </div>
