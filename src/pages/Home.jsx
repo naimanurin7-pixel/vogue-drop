@@ -115,124 +115,6 @@ md:text-7xl
 </section>
 
 
-<section className="py-18 bg-black">
-  <div className="max-w-4xl mx-auto px-6">
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
-
-      {/* CARD 1 */}
-      <div
-        className="
-          bg-zinc-900
-          border border-yellow-400/20
-          rounded-3xl
-p-4 md:p-5
-          hover:border-yellow-400
-          hover:-translate-y-2
-          transition-all
-          duration-300
-        "
-      >
-        <div
-          className="
-            w-12 h-12
-            rounded-full
-            bg-yellow-400
-            flex
-            items-center
-            justify-center
-            text-black
-            mb-6
-          "
-        >
-          <Truck className="w-6 h-6" />
-        </div>
-
-        <h3 className="text-white text-xl font-bold mb-2">
-          Free Shipping
-        </h3>
-
-        <p className="text-zinc-400">
-          Free delivery on all premium orders.
-        </p>
-      </div>
-
-      {/* CARD 2 */}
-      <div
-        className="
-          bg-zinc-900
-          border border-yellow-400/20
-          rounded-3xl
-p-4 md:p-5
-          hover:border-yellow-400
-          hover:-translate-y-2
-          transition-all
-          duration-300
-        "
-      >
-        <div
-          className="
-            w-12 h-12
-            rounded-full
-            bg-yellow-400
-            flex
-            items-center
-            justify-center
-            text-black
-            mb-6
-          "
-        >
-          <ShieldCheck className="w-6 h-6" />
-        </div>
-
-        <h3 className="text-white text-xl font-bold mb-2">
-          Secure Payment
-        </h3>
-
-        <p className="text-zinc-400">
-          100% protected and secure checkout.
-        </p>
-      </div>
-
-      {/* CARD 3 */}
-      <div
-        className="
-          bg-zinc-900
-          border border-yellow-400/20
-          rounded-3xl
-p-4 md:p-5
-          hover:border-yellow-400
-          hover:-translate-y-2
-          transition-all
-          duration-300
-        "
-      >
-        <div
-          className="
-            w-16 h-16
-            rounded-full
-            bg-yellow-400
-            flex
-            items-center
-            justify-center
-            text-black
-            mb-6
-          "
-        >
-          <RefreshCw className="w-6 h-6" />
-        </div>
-
-        <h3 className="text-white text-xl font-bold mb-2">
-          Easy Returns
-        </h3>
-
-        <p className="text-sm text-zinc-400">
-          Hassle-free returns within 30 days.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
 
       {/* FEATURED SECTION */}
 
@@ -381,6 +263,125 @@ p-4 md:p-5
   </div>
 
 </section>
+<section className="py-18 bg-black">
+  <div className="max-w-6xl mx-auto px-6">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+
+      {/* CARD 1 */}
+      <div
+        className="
+          bg-zinc-900
+          border border-yellow-400/20
+          rounded-3xl
+p-4 md:p-5
+          hover:border-yellow-400
+          hover:-translate-y-2
+          transition-all
+          duration-300
+        "
+      >
+        <div
+          className="
+            w-12 h-12
+            rounded-full
+            bg-yellow-400
+            flex
+            items-center
+            justify-center
+            text-black
+            mb-6
+          "
+        >
+          <Truck className="w-6 h-6" />
+        </div>
+
+        <h3 className="text-white text-xl font-bold mb-2">
+          Free Shipping
+        </h3>
+
+        <p className="text-zinc-400">
+          Free delivery on all premium orders.
+        </p>
+      </div>
+
+      {/* CARD 2 */}
+      <div
+        className="
+          bg-zinc-900
+          border border-yellow-400/20
+          rounded-3xl
+p-4 md:p-5
+          hover:border-yellow-400
+          hover:-translate-y-2
+          transition-all
+          duration-300
+        "
+      >
+        <div
+          className="
+            w-12 h-12
+            rounded-full
+            bg-yellow-400
+            flex
+            items-center
+            justify-center
+            text-black
+            mb-6
+          "
+        >
+          <ShieldCheck className="w-6 h-6" />
+        </div>
+
+        <h3 className="text-white text-xl font-bold mb-2">
+          Secure Payment
+        </h3>
+
+        <p className="text-zinc-400">
+          100% protected and secure checkout.
+        </p>
+      </div>
+
+      {/* CARD 3 */}
+      <div
+        className="
+          bg-zinc-900
+          border border-yellow-400/20
+          rounded-3xl
+p-4 md:p-5
+          hover:border-yellow-400
+          hover:-translate-y-2
+          transition-all
+          duration-300
+        "
+      >
+        <div
+          className="
+            w-16 h-16
+            rounded-full
+            bg-yellow-400
+            flex
+            items-center
+            justify-center
+            text-black
+            mb-6
+          "
+        >
+          <RefreshCw className="w-6 h-6" />
+        </div>
+
+        <h3 className="text-white text-xl font-bold mb-2">
+          Easy Returns
+        </h3>
+
+        <p className="text-sm text-zinc-400">
+          Hassle-free returns within 30 days.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
     </div>
   )
