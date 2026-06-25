@@ -113,9 +113,9 @@ if (loading) {
 
           <div
             className="
-              bg-zinc-900
-              rounded-3xl
-              p-8
+              bg-white
+              rounded-2xl
+              p-4
               flex
               items-center
               justify-center
@@ -125,7 +125,7 @@ if (loading) {
   src={product.image}
   alt={product.title}
   className="
-    h-[220px]
+    h-[200px]
 sm:h-[280px]
 md:h-[350px]
     w-full
@@ -227,7 +227,14 @@ leading-7
           Math.max(1, quantity - 1)
         )
       }
-      className="px-4 py-3"
+      className="
+flex
+items-center
+border
+border-zinc-700
+rounded-xl
+h-12
+"
     >
       <Minus />
     </button>
@@ -263,7 +270,7 @@ leading-7
     "
   >
     <ShoppingCart />
-    Add To Cart
+    {/* Add To Cart */}
   </button>
 
   <button
