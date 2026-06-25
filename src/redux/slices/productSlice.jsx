@@ -4,7 +4,7 @@ export const fetchProducts = createAsyncThunk(
   "products/fetchProducts",
   async () => {
     await new Promise(
-      (resolve) => setTimeout(resolve, 2000)
+      (resolve) => setTimeout(resolve, 1000)
     );
 
     const response = await fetch(
