@@ -11,7 +11,7 @@ function Home() {
 
       {/* HERO SLIDER SECTION */}
 
-<section className="relative h-[90vh] overflow-hidden">
+<section className="relative h-[70vh] md:h-[90vh] overflow-hidden">
 
   {/* SLIDE 1 */}
 
@@ -19,19 +19,19 @@ function Home() {
     className="
       absolute
       inset-0
-      animate-pulse
+      // animate-pulse
     "
   >
 
     <img
-      src="https://images.unsplash.com/photo-1496747611176-843222e1e57c"
+     src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=1600&q=80&auto=format&fit=crop"
       alt=""
-      className="
-        w-full
-        h-full
-        object-cover
-         animate-slowZoom
-      "
+     className="
+  w-full
+  h-full
+  object-contain
+  md:object-cover
+"
     />
     
 
@@ -57,7 +57,7 @@ function Home() {
       flex-col
       items-center
       justify-end
-      pb-24
+     pb-12 md:pb-24
       text-center
       z-10
     "
@@ -76,8 +76,9 @@ function Home() {
 
     <h1
       className="
-        text-5xl
-        md:text-7xl
+        text-3xl
+sm:text-5xl
+md:text-7xl
         font-black
         text-white
         mb-8
@@ -277,7 +278,7 @@ function Home() {
     "
   >
     <img
-      src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b"
+      src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=700&q=80&auto=format&fit=crop"
       alt=""
       className="
         h-[280px]
@@ -312,7 +313,7 @@ function Home() {
       >
 
         <img
-          src="https://images.unsplash.com/photo-1483985988355-763728e1935b"
+          src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=700&q=80&auto=format&fit=crop"
           alt=""
           className="
             h-[280px]
@@ -351,7 +352,7 @@ function Home() {
       >
 
         <img
-          src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f"
+          src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=700&q=80&auto=format&fit=crop"
           alt=""
           className="
             h-[280px]
