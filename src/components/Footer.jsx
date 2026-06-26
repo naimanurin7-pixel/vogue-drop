@@ -14,7 +14,7 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-14">
         
         {/* TOP SECTION */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
           {/* BRAND */}
           <div>
@@ -71,9 +71,9 @@ function Footer() {
             </h3>
 
             <ul className="space-y-3 text-zinc-400 text-sm">
-              <li className="hover:text-white cursor-pointer">
+              {/* <li className="hover:text-white cursor-pointer">
                 Contact Us
-              </li>
+              </li> */}
 
               <li className="hover:text-white cursor-pointer">
                 Track Order
@@ -98,7 +98,7 @@ function Footer() {
           </div>
 
           {/* COLLECTIONS */}
-          <div>
+          {/* <div>
             <h3 className="text-xl font-semibold mb-5 text-yellow-400">
               Collections
             </h3>
@@ -128,7 +128,7 @@ function Footer() {
                 Home & Living
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* CONTACT */}
           <div>

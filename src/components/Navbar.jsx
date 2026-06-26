@@ -201,7 +201,9 @@ const [showProfile, setShowProfile] =
 ) : (
   <>
     <button
-      onClick={() => setMobileMenu(false)}
+  onClick={() => {
+    handleLogout();
+  }}
   className="
     px-3
     py-2
@@ -211,9 +213,9 @@ const [showProfile, setShowProfile] =
     transition-all
     duration-300
   "
-    >
-      Logout
-    </button>
+>
+  Logout
+</button>
   </>
 )}
       </div>
